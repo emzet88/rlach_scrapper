@@ -60,11 +60,6 @@ def determine_program_version(zmiany, heat_list_df):
     else:
         gate = 1
     
-    print(rider)
-    print(gate)
-       
-    #col = 'gate '+gate
-
     #get heat 15 data
     heat_15_data = heat_list_df.iloc[14,gate].replace("najlepszy-","")
 
@@ -200,7 +195,7 @@ def find_nth_occurrence(text, substring, n):
 
 
 #folder
-os.chdir("C:/Users/zieli/Desktop/nowe_lepsze_gurustats")
+os.chdir("")
 
 #logfile
 logging.basicConfig(filename='rlach_scraping.log', level=logging.INFO, format='%(asctime)s - %(message)s')
